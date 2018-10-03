@@ -1,0 +1,251 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 1rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.file-input {
+  display: inline-block;
+  text-align: left;
+  background: #fff;
+  padding: 16px;
+  width: 550px;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.file-input > [type='file'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.file-input > .button {
+  display: inline-block;
+  cursor: pointer;
+  background: #eee;
+  padding: 8px 16px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.file-input:hover > .button {
+  background: dodgerblue;
+  color: white;
+}
+
+.file-input > .label {
+  color: #333;
+  white-space: nowrap;
+  opacity: .3;
+}
+
+.file-input.-chosen > .label {
+  opacity: 1;
+}
+
+.sequences {
+  width: 90%;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.sequences::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.sequences::-webkit-scrollbar
+{
+  width: 10px;
+  height: 10px;
+	background-color: #F5F5F5;
+}
+
+.sequences::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%,
+  transparent 25%,
+  transparent 50%,
+  rgba(255, 255, 255, .2) 50%,
+  rgba(255, 255, 255, .2) 75%,
+  transparent 75%,
+  transparent)
+}
+
+.sq1, .sq2, .row {
+  display: flex;
+  min-height: 32px;
+}
+
+.sq1 > span {
+  min-width: 25px;
+  min-height: 24px;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  font-size: 16px;
+}
+
+.sq2 > span {
+  min-width: 25px;
+  min-height: 24px;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  font-size: 16px;
+}
+
+.yellow {
+  color: gold;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+hr {
+  width: 90%;
+	border-top: 1px dotted #8c8b8b;
+	border-bottom: 1px dotted #fff;
+}
+
+h5, h2 {
+  margin: .5rem;
+}
+
+.head {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg {
+  background: #82FA58;
+}
+
+.vertical {
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w3 {
+  width: 33%;
+}
+
+.s {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.matrix {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  max-height: 700px;
+  overflow: auto;
+}
+
+.matrix::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.matrix::-webkit-scrollbar
+{
+  width: 2px;
+  height: 2px;
+	background-color: #F5F5F5;
+}
+
+.matrix::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%,
+  transparent 25%,
+  transparent 50%,
+  rgba(255, 255, 255, .2) 50%,
+  rgba(255, 255, 255, .2) 75%,
+  transparent 75%,
+  transparent)
+}
+
+.row > span {
+  min-width: 32px;
+  min-height: 32px;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  font-size: 16px;
+}
+
+.by {
+  background: #F90;
+}
+
+.br {
+  background: red;
+}
+
+.is {
+  background: blue !important;
+}
